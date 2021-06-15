@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    android:orientation="vertical" >
+
+    <!-- Text view for BMI Text -->
+
+    <TextView
+        android:id="@+id/tv11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="40dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:typeface="serif" />
+    <!-- Textview for calculator text -->
+
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="40dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:text="BERAT IDEAL"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculator"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <!-- Textview for WEIGHT(KG) text -->
+    <TextView
+        android:id="@+id/tv31"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="BERAT BADAN (KG)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering weight with hint in kgs -->
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="satuan KG"
+        android:ems="10"
+        android:fadingEdgeLength="10dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" >
+        <requestFocus />
+    </EditText>
+
+    <!-- Text view for HEIGHT(CM)text -->
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="30dp"
+        android:text="TINGGI (CM)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <!-- Edit text for entering height with hint in cm -->
+
+    <!-- Button for calculating the formula, when pressed, with calculate written over it -->
+
+    <!-- Text view for showing result -->
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="satuan CM"
+        android:textAlignment="center" >
+        android:inputType="numberDecimal"></EditText>
+
+    <Button
+        android:id="@+id/ib1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="vertical"
+        android:longClickable="true"
+        android:nextFocusRight="@color/black"
+        android:text="Calculate"
+        android:background="@color/white"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/add_back"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:fadingEdge="vertical"
+        android:longClickable="true"
+        android:nextFocusRight="@color/black"
+        android:text="KEMBALI"
+        android:visibility="visible" />
+</LinearLayout>
